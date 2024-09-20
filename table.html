@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-container">
+      
+    
+    <!-- Form tag added -->
+    <form >
+      <table border="1">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="name" id="name" value="" /></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input type="number" name="age" id="age" value="" /></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <!-- Applying colspan="2" for gender row -->
+          <td colspan="2">
+            <input type="radio" name="gender" id="male" value="male" /> Male
+            <input type="radio" name="gender" id="female" value="female" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td>Course</td>
+          <td>
+            <select name="course" id="course">
+              <option>JS</option>
+              <option>Python</option>
+              <option>Java</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" id="email" value="" /></td>
+        </tr>
+        <tr>
+          <!-- Applying colspan="2" for Save row -->
+          <td colspan="2" style="text-align: center;">
+            <button onclick="printvalues(event)">Save</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    </div><br><br>
+    <div>
+      <table border="1"  class="table-container">
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Gender</td>
+          <td>Course</td>
+          <td>Email</td>
+          <td>Action</td>
+        </tr>
+        
+        
+       
+
+        </table>
+        
+
+      
+      
+    </div>
+    <script src="table.js"></script>
+</body>
+</html>
