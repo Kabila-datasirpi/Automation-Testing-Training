@@ -7,10 +7,9 @@
 </head>
 <body>
     <div class="input-container">
-      
     
     <!-- Form tag added -->
-    <form >
+    <form>
       <table border="1">
         <tr>
           <td>Name</td>
@@ -45,32 +44,31 @@
         <tr>
           <!-- Applying colspan="2" for Save row -->
           <td colspan="2" style="text-align: center;">
-            <button onclick="printvalues(event)">Save</button>
+            <button onclick="printValues(event)">Save</button>
           </td>
         </tr>
       </table>
     </form>
     </div><br><br>
+
     <div>
-      <table border="1"  class="table-container">
-        <tr>
-          <td>Name</td>
-          <td>Age</td>
-          <td>Gender</td>
-          <td>Course</td>
-          <td>Email</td>
-          <td>Action</td>
-        </tr>
-        
-        
-       
-
-        </table>
-        
-
-      
-      
+      <table border="1" class="table-container">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- New rows will be added here -->
+        </tbody>
+      </table>
     </div>
+
     <script src="table.js"></script>
 </body>
 </html>
