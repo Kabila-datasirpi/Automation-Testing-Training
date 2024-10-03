@@ -1,4 +1,4 @@
-var userNameInput = document.getElementById("name");
+var nameInput = document.getElementsByClassName("name-input")[0]; // Accessing by class name
 var ageInput = document.getElementById("age");
 var courseInput = document.getElementById("course");
 var emailInput = document.getElementById("email");
@@ -8,7 +8,7 @@ function printValues(event) {
     event.preventDefault();
     
     // Get input values
-    var userNameValue = userNameInput.value;
+    var userNameValue = nameInput.value;  // Accessing value from class
     var ageValue = ageInput.value;
     var genderValue = document.querySelector("input[type='radio'][name='gender']:checked").value;
     var courseValue = courseInput.value;
