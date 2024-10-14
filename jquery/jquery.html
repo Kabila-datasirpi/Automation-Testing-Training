@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Identification with jQuery</title>
+    <!-- Add jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Div with ID -->
+    <div id="myDiv">This is a div with an ID</div>
+
+    <!-- Table with input elements -->
+    <table>
+        <tr>
+            <td><input type="text" name="input1" placeholder="Input 1"></td>
+            <td><input type="text" name="input2" placeholder="Input 2"></td>
+        </tr>
+    </table>
+
+    <!-- Divs with Class Names -->
+    <div class="myClass">This is div 1 with class "myClass"</div>
+    <div class="myClass">This is div 2 with class "myClass"</div>
+
+    <script>
+        $(document).ready(function() {
+            // Identify element by ID
+            let elementById = $('#myDiv');
+            console.log("Element by ID:", elementById);
+
+            // Identify all input elements inside the table
+            let tableInputs = $('table input');
+            console.log("Table Inputs:");
+            tableInputs.each(function(index) {
+                console.log(`Input ${index + 1}:`, $(this));
+            });
+
+            // Identify elements by class name
+            let elementsByClass = $('.myClass');
+            console.log("Elements by Class:");
+            elementsByClass.each(function(index) {
+                console.log(`Element ${index + 1}:`, $(this));
+            });
+        });
+    </script>
+
+</body>
+</html>
